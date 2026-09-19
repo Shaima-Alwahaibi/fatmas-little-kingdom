@@ -1,0 +1,47 @@
+.letter__paper {
+  min-height: 12rem;
+  margin: 0;
+  padding: 1.4rem 1.3rem;
+  background:
+    linear-gradient(180deg, rgba(255, 246, 234, 0.5), rgba(255, 255, 255, 0.4)),
+    repeating-linear-gradient(
+      transparent,
+      transparent 27px,
+      rgba(224, 122, 154, 0.12) 28px
+    );
+  border-radius: 22px;
+  font-size: 1.08rem;
+  white-space: pre-wrap;
+}
+
+.caret {
+  display: inline-block;
+  width: 0.12em;
+  height: 1em;
+  margin-left: 2px;
+  background: var(--pink-deep);
+  animation: blink 1s steps(2, end) infinite;
+  vertical-align: text-bottom;
+}
+
+.letter__sign {
+  margin: 1rem 0 0;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #5b3550;
+}
+
+@media (max-width: 720px) {
+  .letter__paper {
+    min-height: 0;
+    padding: 1rem 0.95rem;
+    font-size: 1rem;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}

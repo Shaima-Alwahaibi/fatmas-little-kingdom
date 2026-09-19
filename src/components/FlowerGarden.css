@@ -1,0 +1,181 @@
+.garden__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.8rem;
+}
+
+.flower {
+  appearance: none;
+  border: 0;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 24px;
+  cursor: pointer;
+  padding: 0.9rem 0.4rem 0.8rem;
+  min-height: 168px;
+}
+
+.flower__visual {
+  position: relative;
+  display: block;
+  height: 96px;
+  margin-bottom: 0.5rem;
+}
+
+.flower__stem {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 6px;
+  height: 42px;
+  background: var(--mint-deep);
+  border-radius: 999px;
+  transform: translateX(-50%);
+}
+
+.flower__center {
+  position: absolute;
+  left: 50%;
+  top: 34px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #e8c47a;
+  transform: translateX(-50%) scale(0.7);
+  transition: transform 0.4s ease;
+  z-index: 2;
+}
+
+.flower__petal {
+  position: absolute;
+  left: 50%;
+  top: 28px;
+  width: 22px;
+  height: 30px;
+  margin-left: -11px;
+  border-radius: 50% 50% 40% 40%;
+  transform-origin: 50% 100%;
+  transform: scale(0.45);
+  transition: transform 0.45s ease;
+}
+
+.flower.is-bloomed .flower__petal,
+.flower:focus-visible .flower__petal {
+  transform: scale(1);
+}
+
+.flower.is-bloomed .flower__center,
+.flower:focus-visible .flower__center {
+  transform: translateX(-50%) scale(1);
+}
+
+.flower__petal:nth-child(1) {
+  transform: rotate(-42deg) scale(0.45);
+}
+.flower__petal:nth-child(2) {
+  transform: rotate(-14deg) scale(0.45);
+}
+.flower__petal:nth-child(3) {
+  transform: rotate(14deg) scale(0.45);
+}
+.flower__petal:nth-child(4) {
+  transform: rotate(42deg) scale(0.45);
+}
+
+.flower.is-bloomed .flower__petal:nth-child(1),
+.flower:focus-visible .flower__petal:nth-child(1) {
+  transform: rotate(-48deg) scale(1);
+}
+.flower.is-bloomed .flower__petal:nth-child(2),
+.flower:focus-visible .flower__petal:nth-child(2) {
+  transform: rotate(-16deg) scale(1);
+}
+.flower.is-bloomed .flower__petal:nth-child(3),
+.flower:focus-visible .flower__petal:nth-child(3) {
+  transform: rotate(16deg) scale(1);
+}
+.flower.is-bloomed .flower__petal:nth-child(4),
+.flower:focus-visible .flower__petal:nth-child(4) {
+  transform: rotate(48deg) scale(1);
+}
+
+.flower--pink .flower__petal {
+  background: #f4b8cc;
+}
+.flower--lavender .flower__petal {
+  background: #d5c4f0;
+}
+.flower--peach .flower__petal {
+  background: #f7d3b8;
+}
+.flower--mint .flower__petal {
+  background: #cfe8c9;
+}
+.flower--rose .flower__petal {
+  background: #ef9aae;
+}
+
+.flower__name {
+  display: block;
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+.garden__wish {
+  margin-top: 1.1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 20px;
+  background: rgba(207, 232, 201, 0.35);
+  min-height: 5.2rem;
+}
+
+.garden__wish p {
+  margin: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .flower:hover .flower__petal {
+    transform: scale(1);
+  }
+
+  .flower:hover .flower__center {
+    transform: translateX(-50%) scale(1);
+  }
+
+  .flower:hover .flower__petal:nth-child(1) {
+    transform: rotate(-48deg) scale(1);
+  }
+
+  .flower:hover .flower__petal:nth-child(2) {
+    transform: rotate(-16deg) scale(1);
+  }
+
+  .flower:hover .flower__petal:nth-child(3) {
+    transform: rotate(16deg) scale(1);
+  }
+
+  .flower:hover .flower__petal:nth-child(4) {
+    transform: rotate(48deg) scale(1);
+  }
+}
+
+@media (max-width: 720px) {
+  .garden__row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .flower:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .flower {
+    min-height: 150px;
+  }
+
+  .flower__name {
+    font-size: 0.8rem;
+  }
+
+  .garden__wish {
+    min-height: 0;
+  }
+}
