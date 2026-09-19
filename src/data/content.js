@@ -1,8 +1,8 @@
 export const kingdom = {
   title: "Toomi's Little Kingdom",
-  welcome: "Welcome to Toomi's Little Kingdom 👑",
+  welcome: "Welcome to Fatma's Little Kingdom 👑",
   warning:
-    "This website is exclusively for Toomi. If you are not Toomi, please leave 😂.",
+    "This website is exclusively for Fatma. If you are not Fatma, please leave 😂.",
   enterLabel: "Enter the Kingdom",
   skipToContent: "Skip to birthday letter",
 }
