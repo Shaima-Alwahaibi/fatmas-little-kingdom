@@ -1,8 +1,8 @@
 export const kingdom = {
-  title: "Fatma's Little Kingdom",
-  welcome: "Welcome to Fatma's Little Kingdom 👑",
+  title: "Toomi's Little Kingdom",
+  welcome: "Welcome to Toomi's Little Kingdom 👑",
   warning:
-    "This website is exclusively for Fatma. If you are not Fatma, please leave 😂.",
+    "This website is exclusively for Toomi. If you are not Toomi, please leave 😂.",
   enterLabel: "Enter the Kingdom",
   skipToContent: "Skip to birthday letter",
 }
@@ -10,12 +10,12 @@ export const kingdom = {
 export const letter = {
   heading: "A birthday letter for my princess",
   from: "With all my heart, Shaima",
-  body: "Happy Birthday to my Fatma, my best friend, my sister, and my little princess. I love you so much, and I will always be there for you. You mean everything to me. I hope all your dreams come true, inshallah. You will always be my little princess, even when you grow older. I will always be your big sister, annoying you, making you laugh, and loving you. I love you, Fatma. Always and forever.",
+  body: "Happy Birthday to my Toomi, my best friend, my sister, and my little princess. I love you so much, and I will always be there for you. You mean everything to me. I hope all your dreams come true, inshallah. You will always be my little princess, even when you grow older. I will always be your big sister, annoying you, making you laugh, and loving you. I love you, Toomi. Always and forever.",
 }
 
 export const quiz = {
   heading: "A very serious love quiz",
-  question: "Be honest, princess… who does Fatma love more?",
+  question: "Be honest, princess… who does Toomi love more?",
   resetLabel: "Play the joke again",
   options: [
     {
@@ -34,7 +34,7 @@ export const quiz = {
       id: "matcha",
       label: "Matcha",
       response:
-        "Matcha?? Fatma. You chose matcha over your big sister. Shaima’s heart just made a tiny crack sound. I will go lie down. Maybe forever. Choose again before I start writing sad poetry. 😢",
+        "Matcha?? Toomi. You chose matcha over your big sister. Shaima’s heart just made a tiny crack sound. I will go lie down. Maybe forever. Choose again before I start writing sad poetry. 😢",
     },
   ],
 }
@@ -43,7 +43,7 @@ export const flowers = [
   {
     id: "happiness",
     name: "Happiness bloom",
-    wish: "May your days be soft, silly, and full of reasons to smile. Happiness looks beautiful on you, Fatma.",
+    wish: "May your days be soft, silly, and full of reasons to smile. Happiness looks beautiful on you, Toomi.",
     hue: "pink",
   },
   {
@@ -75,11 +75,11 @@ export const flowers = [
 export const gift = {
   heading: "Final gift: matcha",
   hint: "Tap the royal gift box.",
-  ariaClosed: "Closed gift box. Open Fatma's birthday gift.",
+  ariaClosed: "Closed gift box. Open Toomi's birthday gift.",
   ariaOpen: "Opened gift box with a matcha surprise",
   unlocked:
-    "Congratulations, Princess Fatma! You have unlocked lifetime membership as Shaima's little princess. Unlimited love, jokes, and sister protection. No cancellation allowed 😂❤️.",
-  finale: "I LOVE YOU FATMA. ALWAYS.",
+    "Congratulations, Princess Toomi! You have unlocked lifetime membership as Shaima's little princess. Unlimited love, jokes, and sister protection. No cancellation allowed 😂❤️.",
+  finale: "I LOVE YOU TOOMI. ALWAYS.",
 }
 
 export const navLinks = [

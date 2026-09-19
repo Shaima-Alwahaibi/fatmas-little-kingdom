@@ -11,7 +11,7 @@ function FlowerGarden() {
       <p className="eyebrow">Tap a bloom</p>
       <h2 id="garden-title">Interactive flower garden</h2>
       <p className="lede">
-        Five flowers, five wishes. Each one is waiting for Princess Fatma to open it.
+        Five flowers, five wishes. Each one is waiting for Princess Toomi to open it.
       </p>
 
       <div className="garden__row">

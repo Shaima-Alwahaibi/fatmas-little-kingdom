@@ -29,7 +29,7 @@ function App() {
         <FlowerGarden />
         <GiftBox />
       </main>
-      <footer className="kingdom-footer">Made with love by Shaima, for Fatma. Happy birthday, princess.</footer>
+      <footer className="kingdom-footer">Made with love by Shaima, for Toomi. Happy birthday, princess.</footer>
     </div>
   )
 }

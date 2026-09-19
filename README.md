@@ -1,6 +1,6 @@
-# Fatma's Little Kingdom
+# Toomi's Little Kingdom
 
-A magical, funny, and emotional birthday website for Fatma, made by Shaima.
+A magical, funny, and emotional birthday website for Toomi, made by Shaima.
 
 Built with React and Vite. All wishes, quiz answers, and gift copy live in `src/data/content.js`, so you can edit the story without touching the layout.
 
